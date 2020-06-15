@@ -18,9 +18,9 @@ public class Airport {
 		do {
 			System.out.println("Do you want the plane to go up? [Y = Yes / N = No / X = eXit] ");
 			option = sc.nextLine();
-			if (option.charAt(0) == 'Y')
+			if (option.equals("Y"))
 				plane.goUp();
-		} while (!(option.charAt(0) == 'X'));
+		} while (!(option.equals("X")));
 		System.out.println("Thank you for flying with us!");
 	}
 
