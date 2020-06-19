@@ -16,10 +16,12 @@ public class Airport {
 		plane.addPilot();
 		System.out.println(plane);
 		do {
-			System.out.println("Do you want the plane to go up? [Y = Yes / N = No / X = eXit] ");
-			option = sc.nextLine();
-			plane.moveForward();
-			if (option.equals("Y"))
+
+			System.out.println("Do you want the plane to go up? [Y or Yes / N or No / X = Exit] ");
+      			plane.moveForward();
+			option = (sc.nextLine().toUpperCase());
+			if (option.equals("Y") || option.equals("YES"))
+
 				plane.goUp();
 		} while (!(option.equals("X")));
 		System.out.println("Thank you for flying with us!");
