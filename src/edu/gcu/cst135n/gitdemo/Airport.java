@@ -6,7 +6,7 @@ public class Airport {
 
 	private Airplane plane;
 	private Scanner sc = new Scanner(System.in);
-
+	
 	public Airport() {
 		plane = new Airplane();
 	}

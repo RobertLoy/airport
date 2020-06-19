@@ -12,12 +12,14 @@ public class Airplane {
 	
 	public void addPilot() {
 		pilot = new Pilot();
-		pilot.setName("Captain Kirk");
+		pilot.setfName("Han");
+		pilot.setLname(" Solo");
 	}
 
 	@Override
 	public String toString() {
 		return "Airplane [altitude=" + altitude + ", pilot=" + pilot + "]";
 	}
+
 
 }
